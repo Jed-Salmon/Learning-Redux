@@ -74,7 +74,7 @@ const rootReducer = combineReducers({
   iceCream: iceCreamReducer,
 });
 
-// pass applymiddleware as an argument to createStore
+// pass applyMiddleware as an argument to createStore
 // pass in the middleware to the applyMiddleware method
 // FYI, you can add more than one middleware as a param
 const store = createStore(rootReducer, applyMiddleware(logger));
@@ -82,7 +82,7 @@ console.log("Initial state", store.getState());
 
 const unsubscribe = store.subscribe(() => {});
 
-// dispatch method accepts an action as it's parameter
+// dispatch method accepts an action as its parameter
 store.dispatch(buyCake());
 store.dispatch(buyCake());
 store.dispatch(buyCake());
