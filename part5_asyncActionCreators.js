@@ -86,5 +86,3 @@ const store = createStore(reducer, applyMiddleware(thunkMiddleware));
 
 store.subscribe(() => console.log(store.getState()));
 store.dispatch(fetchUsers());
-
-// Next we will make the API call and dispatch the appropriate actions using Redux Thunk middleware.
